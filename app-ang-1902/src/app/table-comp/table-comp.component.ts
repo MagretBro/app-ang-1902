@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../service/data/data.service';
 
 @Component({
   selector: 'app-table-comp',
@@ -6,23 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-comp.component.scss']
 })
 
-export class TableCompComponent {
+export class TableCompComponent implements OnInit {
   displayedColumns: string[] = ['id', 'name'];
-  dataSource = [
-    { id: 1, name: 'Item 1' },
-    { id: 2, name: 'Item 2' },
-    { id: 3, name: 'Item 3' },
- 
-  ];
+  dataSource: any[] = [];
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.dataSource = this.dataService.getData();
+  }
+   
 }
 
-
-
-// export class TableCompComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
