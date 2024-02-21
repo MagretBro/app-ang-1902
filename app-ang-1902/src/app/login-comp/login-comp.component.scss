@@ -1,0 +1,60 @@
+
+.container {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c3ab91;
+    background-color: #c3ab91;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;  /* Ограничиваем ширину формы */
+    margin: 0 auto;
+  }
+  
+  form > * {
+    margin: 5px auto;
+  }
+
+  form input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 70%;  /* Устанавливаем ширину полей */
+    padding: 5px;
+    border: 1px solid #dfe3cd;
+    background-color: #dfe3cd;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #dfe3cd;;
+  }
+
+  button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
