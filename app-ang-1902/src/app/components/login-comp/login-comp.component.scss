@@ -9,10 +9,10 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #c3ab91;
-    background-color: #c3ab91;
+    background-color: #66fffc;
     padding: 20px;
     border-radius: 5px;
-    max-width: 400px;  /* Ограничиваем ширину формы */
+    max-width: 200px;  /* Ограничиваем ширину формы */
     margin: 0 auto;
   }
   
@@ -23,6 +23,7 @@
   form input {
     font-family: "Montserrat", sans-serif;
     font-size: 11px;
+    padding: 10px 20px
   }
   
   h1 {
@@ -39,21 +40,21 @@
   input {
     width: 70%;  /* Устанавливаем ширину полей */
     padding: 5px;
-    border: 1px solid #dfe3cd;
-    background-color: #dfe3cd;
+    border: 1px solid #fedaff;
+    background-color: #fedaff;
   }
   
   button {
     margin-top: 10px;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid #dfe3cd;;
+    background-color: #00ff99;
+    border: 1px solid #00ff9d;;
   }
 
   button {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
