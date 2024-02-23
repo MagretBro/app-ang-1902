@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { CdkTableModule } from '@angular/cdk/table';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { TableCompComponent } from './components/table-comp/table-comp.component
 import { LoginCompComponent } from './components/login-comp/login-comp.component';
 import { FormsModule } from '@angular/forms';
 import { MainComponent } from './components/main/main.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MainComponent } from './components/main/main.component';
     HttpClientModule,
     CdkTableModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
