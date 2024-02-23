@@ -16,7 +16,7 @@ export class TableCompComponent implements OnInit {
   ngOnInit(): void {
     let res: { [key: string]: string } = this.dataService.getCountryList(); // Добавьте тип здесь
 
-    console.log(res);
+   // console.log(res);
     this.dataSource = Object.keys(res).map(key => ({ id: key, name: res[key] }));
 
     }
